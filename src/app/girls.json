@@ -1,0 +1,50 @@
+{
+  "3stars": [
+    {
+      "id": "3_jade",
+      "name": "Jade",
+      "grade": 3,
+      "faction": "ghost"
+    },
+    {
+      "id": "3_test",
+      "name": "Jade",
+      "grade": 3,
+      "faction": "angel"
+    }
+  ],
+  "4stars": [
+    {
+      "id": "4_flash",
+      "name": "Flash",
+      "grade": 4,
+      "faction": "human"
+    }
+  ],
+  "5stars": [
+    {
+      "id": "5_flash",
+      "name": "Flash",
+      "grade": 5,
+      "faction": "fairy",
+      "requiredFood": "3_jade",
+      "fourStarForm": "4_flash"
+    },
+    {
+      "id": "5_dracula",
+      "name": "Dracula",
+      "grade": 5,
+      "faction": "monster"
+    }
+  ],
+  "6stars": [
+    {
+      "id": "6_drac",
+      "name": "Dracula",
+      "grade": 6,
+      "faction": "demon",
+      "fiveStarForm": "5_dracula",
+      "requiredFood": "5_flash"
+    }
+  ]
+}
