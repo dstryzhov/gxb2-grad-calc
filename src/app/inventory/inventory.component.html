@@ -1,0 +1,12 @@
+<p>inventory works!</p>
+
+<div *ngFor="let girl of girls">
+    <sup>
+        <fa-icon [icon]="girl.faction.icon" [styles]="girl.faction.styles"></fa-icon>
+    </sup>
+    {{girl.name}}
+    <sub *ngFor="let star of girl.grade.icon">
+        <fa-icon [icon]="star" [styles]="girl.grade.styles"></fa-icon>
+    </sub>
+    <br/>
+</div>
