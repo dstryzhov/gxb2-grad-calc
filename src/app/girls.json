@@ -1,50 +1,276 @@
 {
   "3stars": [
     {
+      "id": "3_poppi",
+      "name": "Poppi",
+      "grade": 3,
+      "faction": "ghost"
+    },
+    {
       "id": "3_jade",
       "name": "Jade",
       "grade": 3,
       "faction": "ghost"
     },
     {
-      "id": "3_test",
-      "name": "Jade",
+      "id": "3_ursula",
+      "name": "Ursula",
       "grade": 3,
-      "faction": "angel"
+      "faction": "ghost"
+    },
+    {
+      "id": "3_kitty",
+      "name": "Kitty",
+      "grade": 3,
+      "faction": "ghost"
+    },
+    {
+      "id": "3_samurai",
+      "name": "Samurai",
+      "grade": 3,
+      "faction": "ghost"
     }
   ],
   "4stars": [
     {
+      "id": "4_zombia",
+      "name": "Zombia",
+      "grade": 4,
+      "faction": "ghost"
+    },
+    {
       "id": "4_flash",
       "name": "Flash",
       "grade": 4,
-      "faction": "human"
+      "faction": "ghost"
+    },
+    {
+      "id": "4_werewolf",
+      "name": "Werewolf",
+      "grade": 4,
+      "faction": "ghost"
+    },
+    {
+      "id": "4_nona",
+      "name": "Nona",
+      "grade": 4,
+      "faction": "ghost"
+    },
+    {
+      "id": "4_assasin",
+      "name": "Assasin",
+      "grade": 4,
+      "faction": "ghost"
+    },
+    {
+      "id": "4_ashely",
+      "name": "Ashely",
+      "grade": 4,
+      "faction": "ghost"
+    },
+    {
+      "id": "4_ninja",
+      "name": "Ninja",
+      "grade": 4,
+      "faction": "ghost"
+    },
+    {
+      "id": "4_cynthia",
+      "name": "Cynthia",
+      "grade": 4,
+      "faction": "ghost"
     }
   ],
   "5stars": [
     {
-      "id": "5_flash",
-      "name": "Flash",
+      "id": "5_sapphire",
+      "name": "Sapphire",
       "grade": 5,
-      "faction": "fairy",
-      "requiredFood": "3_jade",
-      "fourStarForm": "4_flash"
+      "faction": "ghost"
+    },
+    {
+      "id": "5_gambler",
+      "name": "Gambler",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_succuba",
+      "name": "Succuba",
+      "grade": 5,
+      "faction": "ghost"
     },
     {
       "id": "5_dracula",
       "name": "Dracula",
       "grade": 5,
-      "faction": "monster"
+      "faction": "ghost"
+    },
+    {
+      "id": "5_wukong",
+      "name": "Wu Kong",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_fencer",
+      "name": "Fencer",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_wildtress",
+      "name": "Wildtrees",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_sakura",
+      "name": "Sakura",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_giana",
+      "name": "Giana",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_ennmaya",
+      "name": "Ennmaya",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_zombia",
+      "name": "Zombia",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_flash",
+      "name": "Flash",
+      "grade": 5,
+      "faction": "ghost",
+      "requiredFood": "3_jade",
+      "fourStarForm": "4_flash"
+    },
+    {
+      "id": "5_werewolf",
+      "name": "Werewolf",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_nona",
+      "name": "Nona",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_assasin",
+      "name": "Assasin",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_ashely",
+      "name": "Ashely",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_ninja",
+      "name": "Ninja",
+      "grade": 5,
+      "faction": "ghost"
+    },
+    {
+      "id": "5_cynthia",
+      "name": "Cynthia",
+      "grade": 5,
+      "faction": "ghost"
     }
   ],
   "6stars": [
     {
-      "id": "6_drac",
+      "id": "6_sapphire",
+      "name": "Sapphire",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_gambler",
+      "name": "Gambler",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_succuba",
+      "name": "Succuba",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_dracula",
       "name": "Dracula",
       "grade": 6,
-      "faction": "demon",
-      "fiveStarForm": "5_dracula",
-      "requiredFood": "5_flash"
+      "faction": "ghost"
+    },
+    {
+      "id": "6_wukong",
+      "name": "Wu Kong",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_fencer",
+      "name": "Fencer",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_wildtress",
+      "name": "Wildtrees",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_sakura",
+      "name": "Sakura",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_giana",
+      "name": "Giana",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_ennmaya",
+      "name": "Ennmaya",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_werewolf",
+      "name": "Werewolf",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_nona",
+      "name": "Nona",
+      "grade": 6,
+      "faction": "ghost"
+    },
+    {
+      "id": "6_cynthia",
+      "name": "Cynthia",
+      "grade": 6,
+      "faction": "ghost"
     }
   ]
 }
