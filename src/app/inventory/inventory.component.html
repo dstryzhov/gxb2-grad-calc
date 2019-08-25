@@ -3,39 +3,23 @@
         <div class="col-sm-8">
             <div class="card-deck text-center">
                 <div *ngFor="let girl of getDisplayGirls()" class="col-sm-2">
-                    <div class="card m-0 h-100 w-75">
-                        <img src="https://picsum.photos/150" class="card-img" alt="...">
-                        <div class="card-img-overlay p-0">
-                            <div class="card-header p-0">
-                                <span class="badge badge-info">
-                                    <small>
-                                        <fa-icon [icon]="girl.faction.icon"
-                                                 [styles]="girl.faction.styles"></fa-icon>
-                                        {{girl.name}}
-                                    </small>
-                                </span>
-                            </div>
-
-                            <div class="card-body p-0">
-                                <fa-icon [icon]="iconMinus" (click)="remInv(girl.id)"></fa-icon>
-                                {{ getInvCount(girl.id)}}
-                                <fa-icon [icon]="iconPlus" (click)="addInv(girl.id)"></fa-icon>
-                            </div>
-
-                            <div class="card-footer p-0 small">
-                                <fa-icon *ngFor="let star of girl.grade.icon"
-                                         class="small"
-                                         [icon]="star"
-                                         [styles]="girl.grade.styles"></fa-icon>
-                            </div>
-                        </div>
-                    </div>
+                    <app-girl-card [girl]="girl"
+                                   [inventoryMode]="true"
+                                   [invCount]="getInvCount(girl.id)"
+                                   (addInv)="addInv(girl.id)"
+                                   (delInv)="remInv(girl.id)"></app-girl-card>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-4">
-            blassdasdasdasdasdsfdf sdf sdfsd fsdfsdf
+            <h2>Available graduations <span class="badge badge-secondary">{{getAvailGradCount()}}</span></h2>
+
+            <div *ngFor="let girl of getGrads()" class="row">
+                <div *ngFor="let card of getGradCards(girl)" class="col-sm-2 p-0">
+                    <app-girl-card [girl]="card.girl"></app-girl-card>
+                </div>
+            </div>
         </div>
     </div>
 
