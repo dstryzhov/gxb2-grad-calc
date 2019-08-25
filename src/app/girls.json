@@ -146,7 +146,9 @@
       "id": "5_zombia",
       "name": "Zombia",
       "grade": 5,
-      "faction": "ghost"
+      "faction": "ghost",
+      "requiredFood": "3_samurai",
+      "previousForm": "4_zombia"
     },
     {
       "id": "5_flash",
@@ -160,37 +162,49 @@
       "id": "5_werewolf",
       "name": "Werewolf",
       "grade": 5,
-      "faction": "ghost"
+      "faction": "ghost",
+      "requiredFood": "3_ursula",
+      "previousForm": "4_werewolf"
     },
     {
       "id": "5_nona",
       "name": "Nona",
       "grade": 5,
-      "faction": "ghost"
+      "faction": "ghost",
+      "requiredFood": "3_kitty",
+      "previousForm": "4_nona"
     },
     {
       "id": "5_assasin",
       "name": "Assasin",
       "grade": 5,
-      "faction": "ghost"
+      "faction": "ghost",
+      "requiredFood": "3_samurai",
+      "previousForm": "4_assasin"
     },
     {
       "id": "5_ashely",
       "name": "Ashely",
       "grade": 5,
-      "faction": "ghost"
+      "faction": "ghost",
+      "requiredFood": "3_poppi",
+      "previousForm": "4_ashely"
     },
     {
       "id": "5_ninja",
       "name": "Ninja",
       "grade": 5,
-      "faction": "ghost"
+      "faction": "ghost",
+      "requiredFood": "3_poppi",
+      "previousForm": "4_ninja"
     },
     {
       "id": "5_cynthia",
       "name": "Cynthia",
       "grade": 5,
-      "faction": "ghost"
+      "faction": "ghost",
+      "requiredFood": "3_ursula",
+      "previousForm": "4_cynthia"
     }
   ],
   "6stars": [
