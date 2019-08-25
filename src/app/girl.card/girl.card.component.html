@@ -1,0 +1,27 @@
+<div class="card m-0 h-100 w-75 text-center">
+    <img src="https://via.placeholder.com/150" class="card-img" alt="...">
+    <div class="card-img-overlay p-0">
+        <div class="card-header p-0">
+            <span class="badge badge-info">
+                <small>
+                    <fa-icon [icon]="girl.faction.icon"
+                             [styles]="girl.faction.styles"></fa-icon>
+                    <span *ngIf="girl.name">{{girl.name}}</span>
+                </small>
+            </span>
+        </div>
+
+        <div *ngIf="inventoryMode" class="card-body p-0">
+            <fa-icon [icon]="iconMinus" (click)="remInvClick()"></fa-icon>
+            {{ invCount}}
+            <fa-icon [icon]="iconPlus" (click)="addInvClick()"></fa-icon>
+        </div>
+
+        <div class="card-footer p-0 small">
+            <fa-icon *ngFor="let star of girl.grade.icon"
+                     class="small"
+                     [icon]="star"
+                     [styles]="girl.grade.styles"></fa-icon>
+        </div>
+    </div>
+</div>
