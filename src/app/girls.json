@@ -154,7 +154,7 @@
       "grade": 5,
       "faction": "ghost",
       "requiredFood": "3_jade",
-      "fourStarForm": "4_flash"
+      "previousForm": "4_flash"
     },
     {
       "id": "5_werewolf",
@@ -199,7 +199,7 @@
       "name": "Sapphire",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_sapphire",
+      "previousForm": "5_sapphire",
       "requiredFood": "5_nona"
     },
     {
@@ -207,7 +207,7 @@
       "name": "Gambler",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_gambler",
+      "previousForm": "5_gambler",
       "requiredFood": "5_werewolf"
     },
     {
@@ -215,7 +215,7 @@
       "name": "Succuba",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_succuba",
+      "previousForm": "5_succuba",
       "requiredFood": "5_ashely"
     },
     {
@@ -223,7 +223,7 @@
       "name": "Dracula",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_dracula",
+      "previousForm": "5_dracula",
       "requiredFood": "5_flash"
     },
     {
@@ -231,7 +231,7 @@
       "name": "Wu Kong",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_wukong",
+      "previousForm": "5_wukong",
       "requiredFood": "5_ninja"
     },
     {
@@ -239,7 +239,7 @@
       "name": "Fencer",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_fencer",
+      "previousForm": "5_fencer",
       "requiredFood": "5_zombia"
     },
     {
@@ -247,7 +247,7 @@
       "name": "Wildtrees",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_wildtress",
+      "previousForm": "5_wildtress",
       "requiredFood": "5_assasin"
     },
     {
@@ -255,7 +255,7 @@
       "name": "Sakura",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_sapphire",
+      "previousForm": "5_sapphire",
       "requiredFood": "5_zombia"
     },
     {
@@ -263,7 +263,7 @@
       "name": "Giana",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_giana",
+      "previousForm": "5_giana",
       "requiredFood": "5_cynthia"
     },
     {
@@ -271,7 +271,7 @@
       "name": "Ennmaya",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_ennmaya",
+      "previousForm": "5_ennmaya",
       "requiredFood": "5_werewolf"
     },
     {
@@ -279,7 +279,7 @@
       "name": "Werewolf",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_werewolf",
+      "previousForm": "5_werewolf",
       "requiredFood": "5_flash"
     },
     {
@@ -287,7 +287,7 @@
       "name": "Nona",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_nona",
+      "previousForm": "5_nona",
       "requiredFood": "5_cynthia"
     },
     {
@@ -295,7 +295,7 @@
       "name": "Cynthia",
       "grade": 6,
       "faction": "ghost",
-      "fiveStarForm": "5_cynthia",
+      "previousForm": "5_cynthia",
       "requiredFood": "5_nona"
     }
   ]
