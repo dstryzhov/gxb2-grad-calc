@@ -487,6 +487,130 @@
       "faction": "ghost",
       "requiredFood": "3_ursula",
       "previousForm": "4_cynthia"
+    },
+    {
+      "id": "5_hottie",
+      "name": "Hottie",
+      "grade": 5,
+      "faction": "human"
+    },
+    {
+      "id": "5_blowie",
+      "name": "Blowie",
+      "grade": 5,
+      "faction": "human"
+    },
+    {
+      "id": "5_chevalir",
+      "name": "Chevalir",
+      "grade": 5,
+      "faction": "human"
+    },
+    {
+      "id": "5_saint",
+      "name": "Saint",
+      "grade": 5,
+      "faction": "human"
+    },
+    {
+      "id": "5_javelin",
+      "name": "Javelin",
+      "grade": 5,
+      "faction": "human"
+    },
+    {
+      "id": "5_geisha",
+      "name": "Geisha",
+      "grade": 5,
+      "faction": "human"
+    },
+    {
+      "id": "5_sonya",
+      "name": "Sonya",
+      "grade": 5,
+      "faction": "human"
+    },
+    {
+      "id": "5_caitlyn",
+      "name": "Caitlyn",
+      "grade": 5,
+      "faction": "human"
+    },
+    {
+      "id": "5_guanyin",
+      "name": "Guan Yin",
+      "grade": 5,
+      "faction": "human"
+    },
+    {
+      "id": "5_librarian",
+      "name": "Librarian",
+      "grade": 5,
+      "faction": "human"
+    },
+    {
+      "id": "5_miya",
+      "name": "Miya",
+      "grade": 5,
+      "faction": "human",
+      "requiredFood": "3_tula",
+      "previousForm": "4_miya"
+    },
+    {
+      "id": "5_bidenity",
+      "name": "Bidenity",
+      "grade": 5,
+      "faction": "human",
+      "requiredFood": "3_donna",
+      "previousForm": "4_bidenity"
+    },
+    {
+      "id": "5_boxer",
+      "name": "Boxer",
+      "grade": 5,
+      "faction": "human",
+      "requiredFood": "3_edward",
+      "previousForm": "4_boxer"
+    },
+    {
+      "id": "5_lily",
+      "name": "Lily",
+      "grade": 5,
+      "faction": "human",
+      "requiredFood": "3_tula",
+      "previousForm": "4_lily"
+    },
+    {
+      "id": "5_nagia",
+      "name": "Nagia",
+      "grade": 5,
+      "faction": "human",
+      "requiredFood": "3_king",
+      "previousForm": "4_nagia"
+    },
+    {
+      "id": "5_hypatia",
+      "name": "Hypatia",
+      "grade": 5,
+      "faction": "human",
+      "requiredFood": "3_nobuna",
+      "previousForm": "4_hypatia"
+    },
+    {
+      "id": "5_quinie",
+      "name": "Quinie",
+      "grade": 5,
+      "faction": "human",
+      "requiredFood": "3_donna",
+      "previousForm": "4_quinie"
+    },
+    {
+      "id": "5_haxie",
+      "name": "Haxie",
+      "grade": 5,
+      "faction": "human",
+      "requiredFood": "3_edward",
+      "previousForm": "4_haxie"
     }
   ],
   "6stars": [
