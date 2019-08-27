@@ -1379,6 +1379,86 @@
       "faction": "fairy",
       "previousForm": "5_linky",
       "requiredFood": "5_medusa"
+    },
+    {
+      "id": "6_amelia",
+      "name": "Amelia",
+      "grade": 6,
+      "faction": "demon",
+      "previousForm": "5_amelia",
+      "requiredFood": "5_toygirl"
+    },
+    {
+      "id": "6_scythe",
+      "name": "Scythe",
+      "grade": 6,
+      "faction": "demon",
+      "previousForm": "5_scythe",
+      "requiredFood": "5_annie"
+    },
+    {
+      "id": "6_annie",
+      "name": "Annie",
+      "grade": 6,
+      "faction": "demon",
+      "previousForm": "5_toygirl",
+      "requiredFood": "5_annie"
+    },
+    {
+      "id": "6_lucifer",
+      "name": "Lucifer",
+      "grade": 6,
+      "faction": "demon",
+      "previousForm": "5_lucifer",
+      "requiredFood": "5_annie"
+    },
+    {
+      "id": "6_wraith",
+      "name": "Wraith",
+      "grade": 6,
+      "faction": "demon",
+      "previousForm": "5_wraith",
+      "requiredFood": "5_toygirl"
+    },
+    {
+      "id": "6_angel",
+      "name": "Angel",
+      "grade": 6,
+      "faction": "angel",
+      "previousForm": "5_angel",
+      "requiredFood": "5_androi"
+    },
+    {
+      "id": "6_gabriel",
+      "name": "Gabriel",
+      "grade": 6,
+      "faction": "angel",
+      "previousForm": "5_gabriel",
+      "requiredFood": "5_calista"
+    },
+    {
+      "id": "6_selene",
+      "name": "Selene",
+      "grade": 6,
+      "faction": "angel",
+      "previousForm": "5_selene",
+      "requiredFood": "5_androi"
+    },
+    {
+      "id": "6_michael",
+      "name": "Michael",
+      "grade": 6,
+      "faction": "angel",
+      "previousForm": "5_michael",
+      "requiredFood": "5_androi"
+    },
+    {
+      "id": "6_phoenix",
+      "name": "Phoenix",
+      "grade": 6,
+      "faction": "angel",
+      "previousForm": "5_phoenix",
+      "requiredFood": "5_calista"
     }
   ]
 }
