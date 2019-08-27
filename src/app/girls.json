@@ -1,5 +1,5 @@
 {
-  "3stars": [
+  "girls": [
     {
       "id": "3_poppi",
       "name": "Poppi",
@@ -131,9 +131,7 @@
       "name": "Luna",
       "grade": 3,
       "faction": "angel"
-    }
-  ],
-  "4stars": [
+    },
     {
       "id": "4_zombia",
       "name": "Zombia",
@@ -361,9 +359,7 @@
       "name": "Selene",
       "grade": 4,
       "faction": "angel"
-    }
-  ],
-  "5stars": [
+    },
     {
       "id": "5_sapphire",
       "name": "Sapphire",
@@ -961,9 +957,7 @@
       "faction": "angel",
       "requiredFood": "3_luna",
       "previousForm": "4_selene"
-    }
-  ],
-  "6stars": [
+    },
     {
       "id": "6_sapphire",
       "name": "Sapphire",

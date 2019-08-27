@@ -39,7 +39,10 @@ export class InventoryComponent implements OnInit {
   }
 
   getDisplayGirls(): Girl[] {
-    return this.girls.filter(girl => girl.grade !== stars[6]);
+    return this.girls.filter(girl => girl.grade !== stars[6])
+      .sort((a, b) => {
+        return a.faction.sortOrder - b.faction.sortOrder || a.grade.sortOrder - b.grade.sortOrder;
+      });
   }
 
   getGrads(): Girl[] {
