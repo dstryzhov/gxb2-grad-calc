@@ -85,6 +85,7 @@ export class InventoryComponent implements OnInit {
         const picked = this.pickNcopies(girl.id, girl.previousForm, girl.requiredSelfQ);
         if (picked !== girl.requiredSelfQ) {
           // reserve food only when have enough copies
+          continue;
         }
         this.pickNcopies(girl.id, girl.requiredFood, girl.requiredFoodQ);
       }
