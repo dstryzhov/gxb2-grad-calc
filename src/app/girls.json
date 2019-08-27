@@ -1171,6 +1171,110 @@
       "faction": "human",
       "previousForm": "5_sonya",
       "requiredFood": "5_quinie"
+    },
+    {
+      "id": "6_nia",
+      "name": "Nia",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_nia",
+      "requiredFood": "5_ironfist"
+    },
+    {
+      "id": "6_nobunaga",
+      "name": "N obunaga",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_nobunaga",
+      "requiredFood": "5_anna"
+    },
+    {
+      "id": "6_silvia",
+      "name": "Silvia",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_silvia",
+      "requiredFood": "5_omega"
+    },
+    {
+      "id": "6_toyo",
+      "name": "Toyo",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_toyo",
+      "requiredFood": "5_liz"
+    },
+    {
+      "id": "6_masamune",
+      "name": "Masamune",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_masamune",
+      "requiredFood": "5_liz"
+    },
+    {
+      "id": "6_hexa",
+      "name": "Hexa",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_hexa",
+      "requiredFood": "5_lightin"
+    },
+    {
+      "id": "6_alice",
+      "name": "Alice",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_alice",
+      "requiredFood": "5_omega"
+    },
+    {
+      "id": "6_lightin",
+      "name": "Lightin",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_lightin",
+      "requiredFood": "5_ironfist"
+    },
+    {
+      "id": "6_diva",
+      "name": "Diva",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_diva",
+      "requiredFood": "5_anna"
+    },
+    {
+      "id": "6_ironfist",
+      "name": "Iron First",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_ironfist",
+      "requiredFood": "5_lightin"
+    },
+    {
+      "id": "6_muppet",
+      "name": "Muppet",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_muppet",
+      "requiredFood": "5_nun"
+    },
+    {
+      "id": "6_priestess",
+      "name": "Priestess",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_priestess",
+      "requiredFood": "5_diva"
+    },
+    {
+      "id": "6_psychic",
+      "name": "Psychic",
+      "grade": 6,
+      "faction": "ghost",
+      "previousForm": "5_psychic",
+      "requiredFood": "5_nun"
     }
   ]
 }
