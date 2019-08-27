@@ -865,6 +865,102 @@
       "faction": "fairy",
       "requiredFood": "3_mythra",
       "previousForm": "4_zoe"
+    },
+    {
+      "id": "5_amelia",
+      "name": "amelia",
+      "grade": 5,
+      "faction": "demon"
+    },
+    {
+      "id": "5_wraith",
+      "name": "Wraith",
+      "grade": 5,
+      "faction": "demon"
+    },
+    {
+      "id": "5_scythe",
+      "name": "Scythe",
+      "grade": 5,
+      "faction": "demon"
+    },
+    {
+      "id": "5_lucifer",
+      "name": "Lucifer",
+      "grade": 5,
+      "faction": "demon"
+    },
+    {
+      "id": "5_toygirl",
+      "name": "Toy Girl",
+      "grade": 5,
+      "faction": "demon",
+      "requiredFood": "3_reo",
+      "previousForm": "4_toygirl"
+    },
+    {
+      "id": "5_lisa",
+      "name": "Lisa",
+      "grade": 5,
+      "faction": "demon",
+      "requiredFood": "3_reo",
+      "previousForm": "4_lisa"
+    },
+    {
+      "id": "5_annie",
+      "name": "Annie",
+      "grade": 5,
+      "faction": "demon",
+      "requiredFood": "3_reo",
+      "previousForm": "4_annie"
+    },
+    {
+      "id": "5_angel",
+      "name": "Angel",
+      "grade": 5,
+      "faction": "angel"
+    },
+    {
+      "id": "5_gabriel",
+      "name": "Gabriel",
+      "grade": 5,
+      "faction": "angel"
+    },
+    {
+      "id": "5_michael",
+      "name": "Michael",
+      "grade": 5,
+      "faction": "angel"
+    },
+    {
+      "id": "5_phoenix",
+      "name": "Phoenix",
+      "grade": 5,
+      "faction": "angel"
+    },
+    {
+      "id": "5_androi",
+      "name": "Androi",
+      "grade": 5,
+      "faction": "angel",
+      "requiredFood": "3_luna",
+      "previousForm": "4_androi"
+    },
+    {
+      "id": "5_calista",
+      "name": "Calista",
+      "grade": 5,
+      "faction": "angel",
+      "requiredFood": "3_luna",
+      "previousForm": "4_calista"
+    },
+    {
+      "id": "5_selene",
+      "name": "Selene",
+      "grade": 5,
+      "faction": "angel",
+      "requiredFood": "3_luna",
+      "previousForm": "4_selene"
     }
   ],
   "6stars": [
