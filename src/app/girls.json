@@ -1176,7 +1176,7 @@
       "id": "6_nia",
       "name": "Nia",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_nia",
       "requiredFood": "5_ironfist"
     },
@@ -1184,7 +1184,7 @@
       "id": "6_nobunaga",
       "name": "N obunaga",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_nobunaga",
       "requiredFood": "5_anna"
     },
@@ -1192,7 +1192,7 @@
       "id": "6_silvia",
       "name": "Silvia",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_silvia",
       "requiredFood": "5_omega"
     },
@@ -1200,7 +1200,7 @@
       "id": "6_toyo",
       "name": "Toyo",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_toyo",
       "requiredFood": "5_liz"
     },
@@ -1208,7 +1208,7 @@
       "id": "6_masamune",
       "name": "Masamune",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_masamune",
       "requiredFood": "5_liz"
     },
@@ -1216,7 +1216,7 @@
       "id": "6_hexa",
       "name": "Hexa",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_hexa",
       "requiredFood": "5_lightin"
     },
@@ -1224,7 +1224,7 @@
       "id": "6_alice",
       "name": "Alice",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_alice",
       "requiredFood": "5_omega"
     },
@@ -1232,7 +1232,7 @@
       "id": "6_lightin",
       "name": "Lightin",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_lightin",
       "requiredFood": "5_ironfist"
     },
@@ -1240,7 +1240,7 @@
       "id": "6_diva",
       "name": "Diva",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_diva",
       "requiredFood": "5_anna"
     },
@@ -1248,7 +1248,7 @@
       "id": "6_ironfist",
       "name": "Iron First",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_ironfist",
       "requiredFood": "5_lightin"
     },
@@ -1256,7 +1256,7 @@
       "id": "6_muppet",
       "name": "Muppet",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_muppet",
       "requiredFood": "5_nun"
     },
@@ -1264,7 +1264,7 @@
       "id": "6_priestess",
       "name": "Priestess",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_priestess",
       "requiredFood": "5_diva"
     },
@@ -1272,9 +1272,113 @@
       "id": "6_psychic",
       "name": "Psychic",
       "grade": 6,
-      "faction": "ghost",
+      "faction": "monster",
       "previousForm": "5_psychic",
       "requiredFood": "5_nun"
+    },
+    {
+      "id": "6_amazon",
+      "name": "Amazon",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_amazon",
+      "requiredFood": "5_beary"
+    },
+    {
+      "id": "6_budelf",
+      "name": "Bud Elf",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_budelf",
+      "requiredFood": "5_chainsaw"
+    },
+    {
+      "id": "6_himoto",
+      "name": "Himoto",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_himoto",
+      "requiredFood": "5_wandy"
+    },
+    {
+      "id": "6_lavia",
+      "name": "Lavia",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_lavia",
+      "requiredFood": "5_elvis"
+    },
+    {
+      "id": "6_susan",
+      "name": "Susan",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_susan",
+      "requiredFood": "5_jelly"
+    },
+    {
+      "id": "6_pandaria",
+      "name": "Pandaria",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_pandaria",
+      "requiredFood": "5_chainsaw"
+    },
+    {
+      "id": "6_nani",
+      "name": "Nani",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_nani",
+      "requiredFood": "5_zoe"
+    },
+    {
+      "id": "6_elvis",
+      "name": "Elvis",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_elvis",
+      "requiredFood": "5_zoe"
+    },
+    {
+      "id": "6_aquaris",
+      "name": "Aquaris",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_aquaris",
+      "requiredFood": "5_litana"
+    },
+    {
+      "id": "6_zoe",
+      "name": "Zoe",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_zoe",
+      "requiredFood": "5_elvis"
+    },
+    {
+      "id": "6_medusa",
+      "name": "Medusa",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_medusa",
+      "requiredFood": "5_wandy"
+    },
+    {
+      "id": "6_kongming",
+      "name": "Kong Ming",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_kongming",
+      "requiredFood": "5_elvis"
+    },
+    {
+      "id": "6_linky",
+      "name": "Linky",
+      "grade": 6,
+      "faction": "fairy",
+      "previousForm": "5_linky",
+      "requiredFood": "5_medusa"
     }
   ]
 }
