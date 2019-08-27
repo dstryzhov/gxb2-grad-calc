@@ -124,7 +124,7 @@
       "id": "3_reo",
       "name": "Reo",
       "grade": 3,
-      "faction": "devil"
+      "faction": "demon"
     },
     {
       "id": "3_luna",
@@ -181,6 +181,186 @@
       "name": "Cynthia",
       "grade": 4,
       "faction": "ghost"
+    },
+    {
+      "id": "4_miya",
+      "name": "Miya",
+      "grade": 4,
+      "faction": "human"
+    },
+    {
+      "id": "4_bidenity",
+      "name": "Bidenity",
+      "grade": 4,
+      "faction": "human"
+    },
+    {
+      "id": "4_boxer",
+      "name": "Boxer",
+      "grade": 4,
+      "faction": "human"
+    },
+    {
+      "id": "4_lily",
+      "name": "Lily",
+      "grade": 4,
+      "faction": "human"
+    },
+    {
+      "id": "4_nagia",
+      "name": "Nagia",
+      "grade": 4,
+      "faction": "human"
+    },
+    {
+      "id": "4_hypatia",
+      "name": "Hypatia",
+      "grade": 4,
+      "faction": "human"
+    },
+    {
+      "id": "4_quinie",
+      "name": "Quinie",
+      "grade": 4,
+      "faction": "human"
+    },
+    {
+      "id": "4_haxie",
+      "name": "Haxie",
+      "grade": 4,
+      "faction": "human"
+    },
+    {
+      "id": "4_nun",
+      "name": "Nun",
+      "grade": 4,
+      "faction": "monster"
+    },
+    {
+      "id": "4_diva",
+      "name": "Diva",
+      "grade": 4,
+      "faction": "monster"
+    },
+    {
+      "id": "4_liz",
+      "name": "Liz",
+      "grade": 4,
+      "faction": "monster"
+    },
+    {
+      "id": "4_anna",
+      "name": "Anna",
+      "grade": 4,
+      "faction": "monster"
+    },
+    {
+      "id": "4_omega",
+      "name": "Omega",
+      "grade": 4,
+      "faction": "monster"
+    },
+    {
+      "id": "4_lightin",
+      "name": "Lightin",
+      "grade": 4,
+      "faction": "monster"
+    },
+    {
+      "id": "4_ironfist",
+      "name": "Iron Fist",
+      "grade": 4,
+      "faction": "monster"
+    },
+    {
+      "id": "4_ada",
+      "name": "Ada",
+      "grade": 4,
+      "faction": "monster"
+    },
+    {
+      "id": "4_beary",
+      "name": "Beary",
+      "grade": 4,
+      "faction": "fairy"
+    },
+    {
+      "id": "4_litana",
+      "name": "Litana",
+      "grade": 4,
+      "faction": "fairy"
+    },
+    {
+      "id": "4_jelly",
+      "name": "Jelly",
+      "grade": 4,
+      "faction": "fairy"
+    },
+    {
+      "id": "4_wandy",
+      "name": "Wandly",
+      "grade": 4,
+      "faction": "fairy"
+    },
+    {
+      "id": "4_elvis",
+      "name": "Elvis",
+      "grade": 4,
+      "faction": "fairy"
+    },
+    {
+      "id": "4_chainsaw",
+      "name": "Chainsaw",
+      "grade": 4,
+      "faction": "fairy"
+    },
+    {
+      "id": "4_medusa",
+      "name": "Medusa",
+      "grade": 4,
+      "faction": "fairy"
+    },
+    {
+      "id": "4_zoe",
+      "name": "Zoe",
+      "grade": 4,
+      "faction": "fairy"
+    },
+    {
+      "id": "4_toygirl",
+      "name": "Toy Girl",
+      "grade": 4,
+      "faction": "demon"
+    },
+    {
+      "id": "4_lisa",
+      "name": "Lisa",
+      "grade": 4,
+      "faction": "demon"
+    },
+    {
+      "id": "4_annie",
+      "name": "Annie",
+      "grade": 4,
+      "faction": "demon"
+    },
+    {
+      "id": "4_androi",
+      "name": "Androi",
+      "grade": 4,
+      "faction": "angel"
+    },
+    {
+      "id": "4_calista",
+      "name": "Calista",
+      "grade": 4,
+      "faction": "angel"
+    },
+    {
+      "id": "4_selene",
+      "name": "Selene",
+      "grade": 4,
+      "faction": "angel"
     }
   ],
   "5stars": [
