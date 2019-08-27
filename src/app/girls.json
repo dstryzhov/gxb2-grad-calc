@@ -611,6 +611,136 @@
       "faction": "human",
       "requiredFood": "3_edward",
       "previousForm": "4_haxie"
+    },
+    {
+      "id": "5_priestess",
+      "name": "Priestess",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_alice",
+      "name": "Alice",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_nia",
+      "name": "Nia",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_muppet",
+      "name": "Muppet",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_wukong",
+      "name": "Wu Kong",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_nobunaga",
+      "name": "Nobunaga",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_silvia",
+      "name": "Silvia",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_toyo",
+      "name": "Toyo",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_masamune",
+      "name": "Masamune",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_hexa",
+      "name": "Hexa",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_psychic",
+      "name": "Psychic",
+      "grade": 5,
+      "faction": "monster"
+    },
+    {
+      "id": "5_nun",
+      "name": "Nun",
+      "grade": 5,
+      "faction": "monster",
+      "requiredFood": "3_samurai",
+      "previousForm": "4_nun"
+    },
+    {
+      "id": "5_diva",
+      "name": "Diva",
+      "grade": 5,
+      "faction": "monster",
+      "requiredFood": "3_jade",
+      "previousForm": "4_diva"
+    },
+    {
+      "id": "5_liz",
+      "name": "Liz",
+      "grade": 5,
+      "faction": "monster",
+      "requiredFood": "3_ursula",
+      "previousForm": "4_liz"
+    },
+    {
+      "id": "5_anna",
+      "name": "Anna",
+      "grade": 5,
+      "faction": "monster",
+      "requiredFood": "3_kitty",
+      "previousForm": "4_anna"
+    },
+    {
+      "id": "5_omega",
+      "name": "Omega",
+      "grade": 5,
+      "faction": "monster",
+      "requiredFood": "3_samurai",
+      "previousForm": "4_omega"
+    },
+    {
+      "id": "5_lightin",
+      "name": "Lightin",
+      "grade": 5,
+      "faction": "monster",
+      "requiredFood": "3_poppi",
+      "previousForm": "4_lightin"
+    },
+    {
+      "id": "5_ironfist",
+      "name": "Iron Fist",
+      "grade": 5,
+      "faction": "monster",
+      "requiredFood": "3_poppi",
+      "previousForm": "4_ironfist"
+    },
+    {
+      "id": "5_ada",
+      "name": "Ada",
+      "grade": 5,
+      "faction": "monster",
+      "requiredFood": "3_ursula",
+      "previousForm": "4_Ada"
     }
   ],
   "6stars": [
