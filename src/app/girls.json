@@ -741,6 +741,130 @@
       "faction": "monster",
       "requiredFood": "3_ursula",
       "previousForm": "4_Ada"
+    },
+    {
+      "id": "5_amazon",
+      "name": "Amazon",
+      "grade": 5,
+      "faction": "fairy"
+    },
+    {
+      "id": "5_budelf",
+      "name": "Bud Elf",
+      "grade": 5,
+      "faction": "fairy"
+    },
+    {
+      "id": "5_himoto",
+      "name": "Himoto",
+      "grade": 5,
+      "faction": "fairy"
+    },
+    {
+      "id": "5_nani",
+      "name": "Nani",
+      "grade": 5,
+      "faction": "fairy"
+    },
+    {
+      "id": "5_lavia",
+      "name": "Lavia",
+      "grade": 5,
+      "faction": "fairy"
+    },
+    {
+      "id": "5_susan",
+      "name": "Susan",
+      "grade": 5,
+      "faction": "fairy"
+    },
+    {
+      "id": "5_aquaris",
+      "name": "Aquaris",
+      "grade": 5,
+      "faction": "fairy"
+    },
+    {
+      "id": "5_kongming",
+      "name": "Kong Ming",
+      "grade": 5,
+      "faction": "fairy"
+    },
+    {
+      "id": "5_pandaria",
+      "name": "Pandaria",
+      "grade": 5,
+      "faction": "fairy"
+    },
+    {
+      "id": "5_linky",
+      "name": "Linky",
+      "grade": 5,
+      "faction": "fairy"
+    },
+    {
+      "id": "5_beary",
+      "name": "Beary",
+      "grade": 5,
+      "faction": "fairy",
+      "requiredFood": "3_robin",
+      "previousForm": "4_beary"
+    },
+    {
+      "id": "5_litana",
+      "name": "Litana",
+      "grade": 5,
+      "faction": "fairy",
+      "requiredFood": "3_mythra",
+      "previousForm": "4_litana"
+    },
+    {
+      "id": "5_jelly",
+      "name": "Jelly",
+      "grade": 5,
+      "faction": "fairy",
+      "requiredFood": "3_athena",
+      "previousForm": "4_jelly"
+    },
+    {
+      "id": "5_wandy",
+      "name": "Wandy",
+      "grade": 5,
+      "faction": "fairy",
+      "requiredFood": "3_sisha",
+      "previousForm": "4_wandy"
+    },
+    {
+      "id": "5_elvis",
+      "name": "Elvis",
+      "grade": 5,
+      "faction": "fairy",
+      "requiredFood": "3_kenshin",
+      "previousForm": "4_elvis"
+    },
+    {
+      "id": "5_chainsaw",
+      "name": "Chainsaw",
+      "grade": 5,
+      "faction": "fairy",
+      "requiredFood": "3_robin",
+      "previousForm": "4_chainsaw"
+    },
+    {
+      "id": "5_medusa",
+      "name": "Medusa",
+      "grade": 5,
+      "faction": "fairy",
+      "requiredFood": "3_athena",
+      "previousForm": "4_medusa"
+    },
+    {
+      "id": "5_zoe",
+      "name": "Zoe",
+      "grade": 5,
+      "faction": "fairy",
+      "requiredFood": "3_mythra",
+      "previousForm": "4_zoe"
     }
   ],
   "6stars": [
