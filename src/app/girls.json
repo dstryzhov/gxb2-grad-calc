@@ -29,6 +29,108 @@
       "name": "Samurai",
       "grade": 3,
       "faction": "ghost"
+    },
+    {
+      "id": "3_tula",
+      "name": "Tula",
+      "grade": 3,
+      "faction": "human"
+    },
+    {
+      "id": "3_edward",
+      "name": "Edward",
+      "grade": 3,
+      "faction": "human"
+    },
+    {
+      "id": "3_king",
+      "name": "King",
+      "grade": 3,
+      "faction": "human"
+    },
+    {
+      "id": "3_donna",
+      "name": "Donna",
+      "grade": 3,
+      "faction": "human"
+    },
+    {
+      "id": "3_nobuna",
+      "name": "Nobuna",
+      "grade": 3,
+      "faction": "human"
+    },
+    {
+      "id": "3_annabelle",
+      "name": "Annabelle",
+      "grade": 3,
+      "faction": "monster"
+    },
+    {
+      "id": "3_harley",
+      "name": "Harley",
+      "grade": 3,
+      "faction": "monster"
+    },
+    {
+      "id": "3_magician",
+      "name": "Magician",
+      "grade": 3,
+      "faction": "monster"
+    },
+    {
+      "id": "3_caitlin",
+      "name": "Caitlin",
+      "grade": 3,
+      "faction": "monster"
+    },
+    {
+      "id": "3_marynari",
+      "name": "Marynari",
+      "grade": 3,
+      "faction": "monster"
+    },
+    {
+      "id": "3_robin",
+      "name": "Robin",
+      "grade": 3,
+      "faction": "fairy"
+    },
+    {
+      "id": "3_sisha",
+      "name": "Sisha",
+      "grade": 3,
+      "faction": "fairy"
+    },
+    {
+      "id": "3_mythra",
+      "name": "Mythra",
+      "grade": 3,
+      "faction": "fairy"
+    },
+    {
+      "id": "3_athena",
+      "name": "Athena",
+      "grade": 3,
+      "faction": "fairy"
+    },
+    {
+      "id": "3_kenshin",
+      "name": "Kenshin",
+      "grade": 3,
+      "faction": "fairy"
+    },
+    {
+      "id": "3_reo",
+      "name": "Reo",
+      "grade": 3,
+      "faction": "devil"
+    },
+    {
+      "id": "3_luna",
+      "name": "Luna",
+      "grade": 3,
+      "faction": "angel"
     }
   ],
   "4stars": [
