@@ -1067,6 +1067,110 @@
       "faction": "ghost",
       "previousForm": "5_cynthia",
       "requiredFood": "5_nona"
+    },
+    {
+      "id": "6_chevalir",
+      "name": "Chevalir",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_chevalir",
+      "requiredFood": "5_bidenity"
+    },
+    {
+      "id": "6_javelin",
+      "name": "Javelin",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_javelin",
+      "requiredFood": "5_haxie"
+    },
+    {
+      "id": "6_geisha",
+      "name": "Geisha",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_geisha",
+      "requiredFood": "5_nagia"
+    },
+    {
+      "id": "6_caitlyn",
+      "name": "Caitlyn",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_caitlyn",
+      "requiredFood": "5_boxer"
+    },
+    {
+      "id": "6_guanyin",
+      "name": "Guan Yin",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_guanyin",
+      "requiredFood": "5_boxer"
+    },
+    {
+      "id": "6_librarian",
+      "name": "Librarian",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_librarian",
+      "requiredFood": "5_hypatia"
+    },
+    {
+      "id": "6_blowie",
+      "name": "Blowie",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_blowie",
+      "requiredFood": "5_miya"
+    },
+    {
+      "id": "6_lily",
+      "name": "Lily",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_lily",
+      "requiredFood": "5_haxie"
+    },
+    {
+      "id": "6_hottie",
+      "name": "Hottie",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_hottie",
+      "requiredFood": "5_miya"
+    },
+    {
+      "id": "6_saint",
+      "name": "Ennmaya",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_saint",
+      "requiredFood": "5_lily"
+    },
+    {
+      "id": "6_boxer",
+      "name": "Boxer",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_boxer",
+      "requiredFood": "5_nagia"
+    },
+    {
+      "id": "6_haxie",
+      "name": "Haxie",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_haxie",
+      "requiredFood": "5_quinie"
+    },
+    {
+      "id": "6_sonya",
+      "name": "Cynthia",
+      "grade": 6,
+      "faction": "human",
+      "previousForm": "5_sonya",
+      "requiredFood": "5_quinie"
     }
   ]
 }
