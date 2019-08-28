@@ -41,4 +41,14 @@ export class GirlCardComponent implements OnInit {
   getImgUrl() {
     return this.inventoryMode ? 'https://via.placeholder.com/100x75' : 'https://via.placeholder.com/50x35';
   }
+
+  getIconStyles() {
+    if (this.inventoryMode || this.girl.grade.sortOrder === 0) {
+      return this.girl.grade.styles;
+    }
+    return {
+      ...this.girl.grade.styles,
+      'font-size': '.4vw'
+    };
+  }
 }

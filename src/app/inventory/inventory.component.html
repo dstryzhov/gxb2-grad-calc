@@ -16,9 +16,11 @@
             <h2>Available graduations <span class="badge badge-secondary">{{getAvailGradCount()}}</span></h2>
 
             <div *ngFor="let girl of getGrads()" class="alert alert-danger row p-1">
-                {{girl.name}}
-                <div *ngFor="let card of getGradCards(girl)" class="col-sm-2 p-0">
-                    <app-girl-card [girl]="card.girl" [picked]="card.picked"></app-girl-card>
+                <div class="col-lg-auto">
+                    <app-girl-card [girl]="girl"></app-girl-card>
+                </div>
+                <div *ngFor="let card of getGradCards(girl)" class="col-lg-auto p-0">
+                    <app-girl-card [girl]="card.girl"></app-girl-card>
                 </div>
             </div>
         </div>

@@ -3,10 +3,11 @@
     <div class="card-img-overlay p-0">
         <div class="card-header p-0">
             <span class="badge badge-info">
-                <small>
                     <fa-icon [icon]="girl.faction.icon"
                              [styles]="girl.faction.styles"></fa-icon>
-                    <span *ngIf="girl.name">{{girl.name}}</span>
+                                <small>
+
+                    <span *ngIf="girl.name" class="text-black-50">{{girl.name}}</span>
                 </small>
             </span>
         </div>
@@ -23,7 +24,7 @@
         <div class="card-footer p-0 small align-baseline">
             <fa-icon *ngFor="let star of girl.grade.icon"
                      [icon]="star"
-                     [styles]="girl.grade.styles"></fa-icon>
+                     [styles]="getIconStyles()"></fa-icon>
         </div>
     </div>
 </div>
