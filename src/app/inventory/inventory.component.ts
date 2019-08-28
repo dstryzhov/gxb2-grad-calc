@@ -28,6 +28,9 @@ export class InventoryComponent implements OnInit {
   }
 
   remInv(id: string): void {
+    if (!this.getInvCount(id)) {
+      return;
+    }
     this.inventory.splice(this.inventory.findIndex(entry => entry.girl.id === id), 1);
     this.prepGradCards();
   }
@@ -48,11 +51,7 @@ export class InventoryComponent implements OnInit {
   getGrads(): Girl[] {
     return this.girls.filter(g => g instanceof FiveStarGirl || g instanceof SixStarGirl)
       .sort((a, b) => a.grade.sortOrder - b.grade.sortOrder)
-      .filter(girl => this.hasCopiesInInventory(girl as SixStarGirl | FiveStarGirl));
-  }
-
-  private hasCopiesInInventory(girl: SixStarGirl | FiveStarGirl) {
-    return this.inventory.some(entry => entry.girl.id === girl.previousForm);
+      .filter(girl => this.gradCards[girl.id] && this.gradCards[girl.id].length);
   }
 
   getAvailGradCount(): number {
@@ -76,12 +75,15 @@ export class InventoryComponent implements OnInit {
   }
 
   prepGradCards() {
-    for (const girl of this.girls) {
-      if (!this.gradCards[girl.id]) {
-        this.gradCards[girl.id] = [];
-      }
+    this.inventory.forEach(e => e.picked = false);
+    this.gradCards = {};
 
+    for (const girl of this.girls) {
       if (girl instanceof SixStarGirl || girl instanceof FiveStarGirl) {
+        if (!this.gradCards[girl.id]) {
+          this.gradCards[girl.id] = [];
+        }
+
         const picked = this.pickNcopies(girl.id, girl.previousForm, girl.requiredSelfQ);
         if (picked !== girl.requiredSelfQ) {
           // reserve food only when have enough copies
