@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-6">
             <div class="card-deck text-center">
-                <div *ngFor="let girl of getDisplayGirls()" class="col-sm-2">
+                <div *ngFor="let girl of getDisplayGirls()" class="col-sm-2 p-1">
                     <app-girl-card [girl]="girl"
                                    [inventoryMode]="true"
                                    [invCount]="getInvCount(girl.id)"
@@ -12,12 +12,13 @@
             </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-6">
             <h2>Available graduations <span class="badge badge-secondary">{{getAvailGradCount()}}</span></h2>
 
-            <div *ngFor="let girl of getGrads()" class="row">
+            <div *ngFor="let girl of getGrads()" class="alert alert-danger row p-1">
+                {{girl.name}}
                 <div *ngFor="let card of getGradCards(girl)" class="col-sm-2 p-0">
-                    <app-girl-card [girl]="card.girl"></app-girl-card>
+                    <app-girl-card [girl]="card.girl" [picked]="card.picked"></app-girl-card>
                 </div>
             </div>
         </div>
