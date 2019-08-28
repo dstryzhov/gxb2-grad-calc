@@ -29,7 +29,7 @@
             ],
             "styles": [
               "src/styles.less",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/assets/bootstrap.min.css"
             ],
             "scripts": []
           },
