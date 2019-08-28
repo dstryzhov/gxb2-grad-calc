@@ -1,5 +1,5 @@
 <div class="card m-0 h-100 w-100 text-center">
-    <img src="https://via.placeholder.com/100" class="card-img" alt="...">
+    <img src="{{getImgUrl()}}" class="card-img" alt="...">
     <div class="card-img-overlay p-0">
         <div class="card-header p-0">
             <span class="badge badge-info">
@@ -16,10 +16,12 @@
             {{ invCount}}
             <fa-icon [icon]="iconPlus" (click)="addInvClick()"></fa-icon>
         </div>
+        <div *ngIf="picked">
+            <fa-icon [icon]="iconCheck" [styles]="{color: 'green'}"></fa-icon>
+        </div>
 
-        <div class="card-footer p-0 small">
+        <div class="card-footer p-0 small align-baseline">
             <fa-icon *ngFor="let star of girl.grade.icon"
-                     class="small"
                      [icon]="star"
                      [styles]="girl.grade.styles"></fa-icon>
         </div>

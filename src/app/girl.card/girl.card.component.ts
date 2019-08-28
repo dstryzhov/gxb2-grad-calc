@@ -1,6 +1,6 @@
 import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 import {Girl} from '../models/girl';
-import {faMinus, faPlus} from '@fortawesome/free-solid-svg-icons';
+import {faMinus, faPlus, faCheck} from '@fortawesome/free-solid-svg-icons';
 import {FiveStarGirl} from '../models/five.star.girl';
 
 @Component({
@@ -12,7 +12,9 @@ export class GirlCardComponent implements OnInit {
 
   private iconPlus = faPlus;
   private iconMinus = faMinus;
+  private iconCheck = faCheck;
 
+  @Input() picked: boolean;
   @Input() inventoryMode: boolean;
   @Input() girl: Girl = new FiveStarGirl({});
   @Input() invCount: number;
@@ -20,7 +22,8 @@ export class GirlCardComponent implements OnInit {
   @Output() addInv: EventEmitter<any> = new EventEmitter();
   @Output() delInv: EventEmitter<any> = new EventEmitter();
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit() {
     this.showPicked = !this.inventoryMode && this.girl !== null;
@@ -32,5 +35,10 @@ export class GirlCardComponent implements OnInit {
 
   addInvClick(): void {
     this.addInv.emit(this.girl.id);
+  }
+
+
+  getImgUrl() {
+    return this.inventoryMode ? 'https://via.placeholder.com/100x75' : 'https://via.placeholder.com/50x35';
   }
 }
