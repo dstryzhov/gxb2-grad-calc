@@ -78,23 +78,28 @@ export class InventoryComponent implements OnInit {
     this.inventory.forEach(e => e.picked = false);
     this.gradCards = {};
 
-    for (const girl of this.girls) {
-      if (girl instanceof SixStarGirl || girl instanceof FiveStarGirl) {
-        if (!this.gradCards[girl.id]) {
-          this.gradCards[girl.id] = [];
-        }
+    const candidates = this.girls.filter(girl => girl instanceof SixStarGirl || girl instanceof FiveStarGirl)
+      .map(girl => girl as SixStarGirl | FiveStarGirl)
+      .filter(girl => {
+        return this.inventory.some(entry => entry.girl.id === girl.previousForm);
+      });
 
-        const picked = this.pickNcopies(girl.id, girl.previousForm, girl.requiredSelfQ);
-        if (picked !== girl.requiredSelfQ) {
-          // reserve food only when have enough copies
-          continue;
-        }
-        this.pickNcopies(girl.id, girl.requiredFood, girl.requiredFoodQ);
+    for (const girl of candidates) {
+      if (!this.gradCards[girl.id]) {
+        this.gradCards[girl.id] = [];
+      }
+      let picked = this.pickNcopies(girl.id, girl.previousForm, girl.requiredSelfQ);
+      if (picked !== girl.requiredSelfQ) {
+        // reserve food only when have enough copies
+        continue;
+      }
+      picked = this.pickNcopies(girl.id, girl.requiredFood, girl.requiredFoodQ);
+      if (girl instanceof SixStarGirl && picked < girl.requiredFoodQ) {
+        this.stealFood(girl);
       }
     }
   }
-
-  private pickNcopies(mainId, copyId, n) {
+  private pickNcopies(mainId: string, copyId: string, n: number) {
     let copiesPicked = this.getCopiesPicked(mainId, copyId);
 
     while (copiesPicked < n) {
@@ -110,6 +115,28 @@ export class InventoryComponent implements OnInit {
     return copiesPicked;
   }
 
+  /**
+   * Steals copies of required food from incomplete 6* graduations of fodder girls
+   * @param target girl that needs a certain 5* food
+   */
+  private stealFood(target: SixStarGirl) {
+    const competition = this.girls.filter(girl => girl instanceof SixStarGirl)
+      .map(girl => girl as SixStarGirl)
+      .find(girl => girl.previousForm === target.requiredFood);
+
+    if (!competition || !this.gradCards[competition.id]) {
+      return;
+    }
+    // no six star form or available copies, can't steal
+    const gradCard = this.gradCards[competition.id];
+
+    const copies = gradCard.filter(entry => entry.girl.id === target.requiredFood);
+    const food = gradCard.filter(entry => entry.girl.id === competition.requiredFood);
+    if (copies.length < competition.requiredSelfQ || food.length < competition.requiredFoodQ) {
+      gradCard.splice(gradCard.indexOf(copies[0]), 1);
+      this.gradCards[target.id].push(copies[0]);
+    }
+  }
   private getCopiesPicked(girlId: string, previousForm): number {
     return this.gradCards[girlId].filter(g => g.girl.id === previousForm).length;
   }
