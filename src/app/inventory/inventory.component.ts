@@ -5,6 +5,7 @@ import {stars} from '../enums/star';
 import {SixStarGirl} from '../models/six.star.girl';
 import {InventoryEntry} from '../models/inventory.entry';
 import {FiveStarGirl} from '../models/five.star.girl';
+import {GradCard} from '../models/grad.card';
 
 @Component({
   selector: 'app-inventory',
@@ -14,7 +15,7 @@ import {FiveStarGirl} from '../models/five.star.girl';
 export class InventoryComponent implements OnInit {
   private girls: Girl[];
   private inventory: InventoryEntry[] = [];
-  private gradCards: { [key: string]: InventoryEntry[] } = {};
+  private gradCards: GradCard[] = [];
 
   constructor(private importService: ImportService) {
   }
@@ -36,7 +37,7 @@ export class InventoryComponent implements OnInit {
   }
 
   addInv(id: string): void {
-    const entry = new InventoryEntry(this.girls.find(g => g.id === id));
+    const entry = new InventoryEntry(this.getGirl(id));
     this.inventory.push(entry);
     this.prepGradCards();
   }
@@ -48,10 +49,8 @@ export class InventoryComponent implements OnInit {
       });
   }
 
-  getGrads(): Girl[] {
-    return this.girls.filter(g => g instanceof FiveStarGirl || g instanceof SixStarGirl)
-      .sort((a, b) => a.grade.sortOrder - b.grade.sortOrder)
-      .filter(girl => this.gradCards[girl.id] && this.gradCards[girl.id].length);
+  getGrads(): GradCard [] {
+    return this.gradCards.sort((a, b) => a.targetGirl.grade.sortOrder - b.targetGirl.grade.sortOrder);
   }
 
   getAvailGradCount(): number {
@@ -69,14 +68,23 @@ export class InventoryComponent implements OnInit {
 
     avail[0].picked = true;
 
-    this.gradCards[targetId].push(avail[0]);
+    this.addToGrad(targetId, avail[0]);
 
     return avail[0];
   }
 
+  private addToGrad(targetId: string, inventoryEntry: InventoryEntry) {
+    let gradCard = this.getGradCardFor(targetId);
+    if (!gradCard) {
+      gradCard = new GradCard(this.getGirl(targetId) as FiveStarGirl | SixStarGirl);
+      this.gradCards.push(gradCard);
+    }
+    gradCard.addFood(inventoryEntry);
+  }
+
   prepGradCards() {
     this.inventory.forEach(e => e.picked = false);
-    this.gradCards = {};
+    this.gradCards = [];
 
     const candidates = this.girls.filter(girl => girl instanceof SixStarGirl || girl instanceof FiveStarGirl)
       .map(girl => girl as SixStarGirl | FiveStarGirl)
@@ -85,9 +93,6 @@ export class InventoryComponent implements OnInit {
       });
 
     for (const girl of candidates) {
-      if (!this.gradCards[girl.id]) {
-        this.gradCards[girl.id] = [];
-      }
       let picked = this.pickNcopies(girl.id, girl.previousForm, girl.requiredSelfQ);
       if (picked !== girl.requiredSelfQ) {
         // reserve food only when have enough copies
@@ -99,6 +104,7 @@ export class InventoryComponent implements OnInit {
       }
     }
   }
+
   private pickNcopies(mainId: string, copyId: string, n: number) {
     let copiesPicked = this.getCopiesPicked(mainId, copyId);
 
@@ -124,24 +130,34 @@ export class InventoryComponent implements OnInit {
       .map(girl => girl as SixStarGirl)
       .find(girl => girl.previousForm === target.requiredFood);
 
-    if (!competition || !this.gradCards[competition.id]) {
+    if (!competition || !this.getGradCardFor(competition.id)) {
+      // no six star form or available copies, can't steal
       return;
     }
-    // no six star form or available copies, can't steal
-    const gradCard = this.gradCards[competition.id];
+    const gradCard = this.getGradCardFor(competition.id);
 
-    const copies = gradCard.filter(entry => entry.girl.id === target.requiredFood);
-    const food = gradCard.filter(entry => entry.girl.id === competition.requiredFood);
+    const copies = gradCard.food.filter(entry => entry.girl.id === target.requiredFood);
+    const food = gradCard.food.filter(entry => entry.girl.id === competition.requiredFood);
     if (copies.length < competition.requiredSelfQ || food.length < competition.requiredFoodQ) {
-      gradCard.splice(gradCard.indexOf(copies[0]), 1);
-      this.gradCards[target.id].push(copies[0]);
+      gradCard.food.splice(gradCard.food.indexOf(copies[0]), 1);
+
+      this.getGradCardFor(target.id).addFood(copies[0]);
     }
   }
+
   private getCopiesPicked(girlId: string, previousForm): number {
-    return this.gradCards[girlId].filter(g => g.girl.id === previousForm).length;
+    const gradCard = this.getGradCardFor(girlId);
+    if (!gradCard) {
+      return 0;
+    }
+    return gradCard.food.filter(g => g.girl.id === previousForm).length;
   }
 
-  getGradCards(girl: Girl): InventoryEntry[] {
-    return this.gradCards[girl.id] || [];
+  private getGradCardFor(id: string): GradCard {
+    return this.gradCards.find(card => card.targetGirl.id === id);
+  }
+
+  private getGirl(id: string): Girl {
+    return this.girls.find(girl => girl.id === id);
   }
 }

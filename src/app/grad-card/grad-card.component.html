@@ -1,0 +1,10 @@
+<alert [type]="getGradState()">
+    <div class="row p-1">
+        <div class="col-lg-auto">
+            <app-girl-card [girl]="gradCard.targetGirl"></app-girl-card>
+        </div>
+        <div *ngFor="let entry of gradCard.food" class="col-lg-auto p-0">
+            <app-girl-card [girl]="entry.girl"></app-girl-card>
+        </div>
+    </div>
+</alert>

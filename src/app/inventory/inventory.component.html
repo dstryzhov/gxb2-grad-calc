@@ -14,15 +14,7 @@
 
         <div class="col-lg-6">
             <h2>Available graduations <span class="badge badge-secondary">{{getAvailGradCount()}}</span></h2>
-
-            <div *ngFor="let girl of getGrads()" class="alert alert-danger row p-1">
-                <div class="col-lg-auto">
-                    <app-girl-card [girl]="girl"></app-girl-card>
-                </div>
-                <div *ngFor="let card of getGradCards(girl)" class="col-lg-auto p-0">
-                    <app-girl-card [girl]="card.girl"></app-girl-card>
-                </div>
-            </div>
+            <app-grad-card *ngFor="let card of getGrads()" [gradCard]="card"></app-grad-card>
         </div>
     </div>
 
