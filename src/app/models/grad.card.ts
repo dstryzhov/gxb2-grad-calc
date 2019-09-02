@@ -1,12 +1,11 @@
-import {FiveStarGirl} from './five.star.girl';
-import {SixStarGirl} from './six.star.girl';
 import {InventoryEntry} from './inventory.entry';
+import {GraduatedGirl} from './girl';
 
 export class GradCard {
-  targetGirl: FiveStarGirl | SixStarGirl;
+  targetGirl: GraduatedGirl;
   food: InventoryEntry[] = [];
 
-  constructor(targetGirl: FiveStarGirl | SixStarGirl) {
+  constructor(targetGirl: GraduatedGirl) {
     this.targetGirl = targetGirl;
   }
 

@@ -1,7 +1,6 @@
 import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 import {Girl} from '../models/girl';
 import {faMinus, faPlus, faCheck} from '@fortawesome/free-solid-svg-icons';
-import {FiveStarGirl} from '../models/five.star.girl';
 
 @Component({
   selector: 'app-girl-card',
@@ -16,7 +15,7 @@ export class GirlCardComponent implements OnInit {
 
   @Input() picked: boolean;
   @Input() inventoryMode: boolean;
-  @Input() girl: Girl = new FiveStarGirl({});
+  @Input() girl: Girl;
   @Input() invCount: number;
   @Input() showPicked: boolean;
   @Output() addInv: EventEmitter<any> = new EventEmitter();

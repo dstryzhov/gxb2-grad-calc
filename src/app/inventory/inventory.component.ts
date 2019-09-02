@@ -1,10 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {Girl} from '../models/girl';
+import {Girl, GraduatedGirl} from '../models/girl';
 import {ImportService} from '../service/import.service';
 import {stars} from '../enums/star';
-import {SixStarGirl} from '../models/six.star.girl';
 import {InventoryEntry} from '../models/inventory.entry';
-import {FiveStarGirl} from '../models/five.star.girl';
 import {GradCard} from '../models/grad.card';
 
 @Component({
@@ -76,7 +74,7 @@ export class InventoryComponent implements OnInit {
   private addToGrad(targetId: string, inventoryEntry: InventoryEntry) {
     let gradCard = this.getGradCardFor(targetId);
     if (!gradCard) {
-      gradCard = new GradCard(this.getGirl(targetId) as FiveStarGirl | SixStarGirl);
+      gradCard = new GradCard(this.getGirl(targetId) as GraduatedGirl);
       this.gradCards.push(gradCard);
     }
     gradCard.addFood(inventoryEntry);
@@ -86,8 +84,8 @@ export class InventoryComponent implements OnInit {
     this.inventory.forEach(e => e.picked = false);
     this.gradCards = [];
 
-    const candidates = this.girls.filter(girl => girl instanceof SixStarGirl || girl instanceof FiveStarGirl)
-      .map(girl => girl as SixStarGirl | FiveStarGirl)
+    const candidates = this.girls.filter(girl => girl instanceof GraduatedGirl)
+      .map(girl => girl as GraduatedGirl)
       .filter(girl => {
         return this.inventory.some(entry => entry.girl.id === girl.previousForm);
       });
@@ -99,7 +97,7 @@ export class InventoryComponent implements OnInit {
         continue;
       }
       picked = this.pickNcopies(girl.id, girl.requiredFood, girl.requiredFoodQ);
-      if (girl instanceof SixStarGirl && picked < girl.requiredFoodQ) {
+      if (girl.grade === stars[6] && picked < girl.requiredFoodQ) {
         this.stealFood(girl);
       }
     }
@@ -125,9 +123,9 @@ export class InventoryComponent implements OnInit {
    * Steals copies of required food from incomplete 6* graduations of fodder girls
    * @param target girl that needs a certain 5* food
    */
-  private stealFood(target: SixStarGirl) {
-    const competition = this.girls.filter(girl => girl instanceof SixStarGirl)
-      .map(girl => girl as SixStarGirl)
+  private stealFood(target: GraduatedGirl) {
+    const competition = this.girls.filter(girl => girl.grade === stars[6])
+      .map(girl => girl as GraduatedGirl)
       .find(girl => girl.previousForm === target.requiredFood);
 
     if (!competition || !this.getGradCardFor(competition.id)) {
