@@ -20,6 +20,20 @@ export class InventoryComponent implements OnInit {
 
   ngOnInit() {
     this.girls = this.importService.importGirls();
+
+    // TODO testing
+    this.addInv('5_nona');
+    this.addInv('5_nona');
+    this.addInv('5_nona');
+    this.addInv('5_cynthia');
+    this.addInv('5_cynthia');
+    this.addInv('5_cynthia');
+    this.addInv('5_cynthia');
+    this.addInv('5_cynthia');
+    this.addInv('5_cynthia');
+    this.addInv('5_cynthia');
+    this.addInv('5_cynthia');
+    this.addInv('5_cynthia');
   }
 
   getInvCount(id: string): number {
@@ -52,7 +66,7 @@ export class InventoryComponent implements OnInit {
   }
 
   getAvailGradCount(): number {
-    return 0;
+    return this.gradCards.filter(card => card.enoughFodder()).length;
   }
 
   pickFromInv(toPick: string, targetId: string): InventoryEntry {
@@ -157,5 +171,12 @@ export class InventoryComponent implements OnInit {
 
   private getGirl(id: string): Girl {
     return this.girls.find(girl => girl.id === id);
+  }
+
+  getFodderFor(targetGirl: GraduatedGirl) {
+    return this.inventory
+      .filter(entry => !entry.picked)
+      .filter(entry => entry.girl.faction === targetGirl.faction)
+      .filter(entry => entry.girl.grade === this.getGirl(targetGirl.previousForm).grade);
   }
 }

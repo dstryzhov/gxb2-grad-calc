@@ -1,10 +1,26 @@
 <alert [type]="getGradState()">
     <div class="row p-1">
-        <div class="col-lg-auto">
+        <div class="col-auto">
             <app-girl-card [girl]="gradCard.targetGirl"></app-girl-card>
         </div>
-        <div *ngFor="let entry of gradCard.food" class="col-lg-auto p-0">
-            <app-girl-card [girl]="entry.girl"></app-girl-card>
+
+        <div *ngIf="gradCard.copiesPicked() > 0" class="col-auto p-0">
+            <app-girl-card [girl]="gradCard.getPrevForm()" [gradView]="true"
+                           [gradCount]="gradCard.copiesPicked()"
+                           [gradTotal]="gradCard.targetGirl.requiredSelfQ"></app-girl-card>
+        </div>
+
+        <div *ngIf="gradCard.foodPicked() > 0" class="col-auto p-0">
+            <app-girl-card [girl]="gradCard.getReqFood()" [gradView]="true"
+                           [gradCount]="gradCard.foodPicked()"
+                           [gradTotal]="gradCard.targetGirl.requiredFoodQ"></app-girl-card>
+        </div>
+
+        <div *ngFor="let entry of gradCard.fodder; let i = index" class="col-auto p-0">
+            <app-girl-card *ngIf="gradCard.enoughFood()"
+                           [gradView]="true" [entry]="entry"
+                           [availableFodder]="availableFodder"
+                           (fodderPicked)="addFodder($event, i)"></app-girl-card>
         </div>
     </div>
 </alert>

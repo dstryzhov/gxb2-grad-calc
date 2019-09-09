@@ -13,8 +13,12 @@
         </div>
 
         <div class="col-lg-6">
-            <h2>Available graduations <span class="badge badge-secondary">{{getAvailGradCount()}}</span></h2>
-            <app-grad-card *ngFor="let card of getGrads()" [gradCard]="card"></app-grad-card>
+            <h2>Available graduations <span class="badge badge-secondary">
+                {{getAvailGradCount()}}</span>
+            </h2>
+            <app-grad-card *ngFor="let card of getGrads()"
+                           [gradCard]="card"
+                           [availableFodder]="getFodderFor(card.targetGirl)"></app-grad-card>
         </div>
     </div>
 

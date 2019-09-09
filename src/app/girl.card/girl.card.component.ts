@@ -1,31 +1,41 @@
 import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 import {Girl} from '../models/girl';
-import {faMinus, faPlus, faCheck} from '@fortawesome/free-solid-svg-icons';
+import {faMinus, faPlus} from '@fortawesome/free-solid-svg-icons';
+import {NgbDropdown} from '@ng-bootstrap/ng-bootstrap';
+import {InventoryEntry} from '../models/inventory.entry';
 
 @Component({
   selector: 'app-girl-card',
   templateUrl: './girl.card.component.html',
-  styleUrls: ['./girl.card.component.less']
+  styleUrls: ['./girl.card.component.less'],
+  providers: [NgbDropdown]
 })
 export class GirlCardComponent implements OnInit {
 
   private iconPlus = faPlus;
   private iconMinus = faMinus;
-  private iconCheck = faCheck;
 
   @Input() picked: boolean;
   @Input() inventoryMode: boolean;
   @Input() girl: Girl;
   @Input() invCount: number;
   @Input() showPicked: boolean;
+  @Input() gradView: boolean;
+  @Input() gradCount: number;
+  @Input() gradTotal: number;
+  @Input() entry: InventoryEntry;
+  @Input() availableFodder: InventoryEntry[];
   @Output() addInv: EventEmitter<any> = new EventEmitter();
   @Output() delInv: EventEmitter<any> = new EventEmitter();
+  @Output() fodderPicked: EventEmitter<InventoryEntry> = new EventEmitter<InventoryEntry>();
 
   constructor() {
   }
 
   ngOnInit() {
-    this.showPicked = !this.inventoryMode && this.girl !== null;
+    if (!this.girl && this.entry) {
+      this.girl = this.entry.girl;
+    }
   }
 
   remInvClick(): void {
@@ -49,5 +59,10 @@ export class GirlCardComponent implements OnInit {
       ...this.girl.grade.styles,
       'font-size': '.4vw'
     };
+  }
+
+  pickFodder($event: InventoryEntry) {
+    this.fodderPicked.emit($event);
+    this.girl = $event.girl;
   }
 }

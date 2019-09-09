@@ -1,0 +1,18 @@
+<div class="col text-right">
+    <div *ngIf="!picked" ngbDropdown placement="bottom-left" class="d-inline-block">
+        <fa-icon [icon]="iconSearch" ngbDropdownToggle class="search-icon"></fa-icon>
+        <div ngbDropdownMenu>
+            <button *ngFor="let entry of fodder" class="p-1"
+                    ngbDropdownItem (click)="pickFodder(entry)">
+                <fa-icon [icon]="entry.girl.faction.icon"
+                         [styles]="entry.girl.faction.styles" class="float-left">
+                </fa-icon>
+                {{entry.girl.name}}
+            </button>
+        </div>
+    </div>
+
+    <div *ngIf="!!picked" class="trash-icon">
+        <fa-icon [icon]="iconTrash" (click)="dropFodder()"></fa-icon>
+    </div>
+</div>

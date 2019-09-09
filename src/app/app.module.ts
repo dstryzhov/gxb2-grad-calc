@@ -9,20 +9,24 @@ import {AppComponent} from './app.component';
 import {InventoryComponent} from './inventory/inventory.component';
 import {GirlCardComponent} from './girl.card/girl.card.component';
 import { GradCardComponent } from './grad-card/grad-card.component';
+import { FodderPickerComponent } from './fodder-picker/fodder-picker.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     InventoryComponent,
     GirlCardComponent,
-    GradCardComponent
+    GradCardComponent,
+    FodderPickerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AppRoutingModule,
     FontAwesomeModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
